@@ -9,7 +9,8 @@ import Header from './Components/Header'
 import Footer from './Components/Footer'
 import About from './Views/About'
 import Home from './Views/Home'
-import ContactUs from "./Views/ContactUs"
+import ContactUs from './Views/ContactUs'
+import Product from './Views/Product'
 
 function App() {
   return (
@@ -19,12 +20,15 @@ function App() {
       <Header />
 
       <div className="p-3"> 
-      <Switch>
+        <Switch>
           <Route exact path="/">
             <Home />
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/products/:id">
+            <Product />
           </Route>
           <Route path="/contact-us">
             <ContactUs />
