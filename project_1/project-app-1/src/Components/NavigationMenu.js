@@ -1,5 +1,4 @@
 import React from 'react'
-import Navigation from './Navigation'
 import { Link } from "react-router-dom"
 
 
@@ -19,6 +18,11 @@ function NavigationMenu(props){
                   <Link to="/about" 
                   className="text-blue-500 py-3 border-t border-b block" 
                   onClick={props.closeMenu}>About</Link>
+              </li>
+              <li> 
+                  <Link to="/contact-us" 
+                  className="text-blue-500 py-3 border-t border-b block" 
+                  onClick={props.closeMenu}>Contact Us</Link>
               </li>
           </ul> 
         </div>
