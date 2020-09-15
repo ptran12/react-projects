@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
   Link
-} from "react-router-dom"
+} from 'react-router-dom'
 import Header from './Components/Header'
 import Footer from './Components/Footer'
 import About from './Views/About'
